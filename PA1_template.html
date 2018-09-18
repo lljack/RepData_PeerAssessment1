@@ -130,7 +130,7 @@ $(document).ready(function () {
 <ol style="list-style-type: decimal">
 <li>Load the data</li>
 </ol>
-<pre class="r"><code>activity &lt;- read.csv(&quot;/Users/ryota-mac/desktop/Coursera/activity.csv&quot;)</code></pre>
+<pre class="r"><code>activity &lt;- read.csv(&quot;./activity.csv&quot;)</code></pre>
 </div>
 <div id="what-is-mean-total-number-of-steps-taken-per-day" class="section level2">
 <h2>What is mean total number of steps taken per day?</h2>
@@ -199,9 +199,7 @@ hist(steps_day2, breaks=10, main=&quot;Total number of steps taken each day (aft
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
-<ol start="11" style="list-style-type: decimal">
-<li>Create a new factor variable in the dataset with two levels ??? ???weekday??? and ???weekend??? indicating whether a given date is a weekday or weekend day</li>
-</ol>
+<p>NA</p>
 <pre class="r"><code>activity2$week &lt;- weekdays(as.Date(activity2$date))
 activity_Mon &lt;- subset(activity2, activity2$week == &quot;Monday&quot;)
 activity_Tue &lt;- subset(activity2, activity2$week == &quot;Tuesday&quot;)
